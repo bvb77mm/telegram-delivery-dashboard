@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>پنل مدیریت تحویل</title>
+<title>داشبورد تحویل</title>
 <style>
 body{font-family:Vazirmatn,Tahoma,system-ui,sans-serif;margin:0;background:#f4f5f7;color:#1c1e21}
 main{max-width:960px;margin:0 auto;padding:24px}
@@ -16,7 +16,7 @@ th,td{padding:10px;text-align:right;border-bottom:1px solid #eee}
 .delivered{background:#bbf7d0}.in_transit{background:#bfdbfe}.cancelled{background:#fecaca}.pending{background:#fde68a}
 .note{color:#b45309;font-size:14px}
 </style></head><body><main>
-<h1>پنل مدیریت تحویل</h1>
+<h1>داشبورد تحویل</h1>
 {% if not bot_on %}<p class="note">ربات تلگرام خاموش است: برای فعال‌سازی، متغیر TELEGRAM_BOT_TOKEN را تنظیم کنید.</p>{% endif %}
 <div class="cards">{% for s in statuses %}<div class="card"><b>{{ counts[s] }}</b>{{ labels[s] }}</div>{% endfor %}</div>
 <form class="add" method="post" action="/add">
